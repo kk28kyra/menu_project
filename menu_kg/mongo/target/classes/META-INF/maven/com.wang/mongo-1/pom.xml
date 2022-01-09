@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.3.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.wang</groupId>
+	<artifactId>mongo-1</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>mongo-1</name>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>jep</groupId>
+			<artifactId>jep</artifactId>
+			<version>2.24</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		
+		<dependency>
+    		<groupId>nz.net.ultraq.thymeleaf</groupId>
+    		<artifactId>thymeleaf-layout-dialect</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.7</version>
+		</dependency>
+		
+		<dependency>
+    		<groupId>net.sf.json-lib</groupId>
+    		<artifactId>json-lib</artifactId>
+    		<version>2.4</version>
+    		<classifier>jdk15</classifier>
+		</dependency>
+		
+           <dependency>
+   				<groupId>com.github.pagehelper</groupId>
+  				<artifactId>pagehelper-spring-boot-starter</artifactId>
+   				<version>1.2.5</version>
+        </dependency>
+        
+        <dependency>
+        		<groupId>org.thymeleaf.extras</groupId>
+        		<artifactId>thymeleaf-extras-java8time</artifactId>
+        </dependency>
+        
+		 <dependency>
+		 	<groupId>org.apache.lucene</groupId>
+		 	<artifactId>lucene-core</artifactId>
+		 	<version>7.1.0</version>
+		 </dependency>	
+		 
+		<dependency>
+				<groupId>org.apache.lucene</groupId>
+				<artifactId>lucene-queryparser</artifactId>
+				<version>7.1.0</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-analyzers-common</artifactId>
+			<version>7.1.0</version>
+		</dependency>
+		
+		<!--支持查询结果高亮  -->	
+		<dependency>
+    		<groupId>org.apache.lucene</groupId>
+    		<artifactId>lucene-highlighter</artifactId>
+    		<version>7.1.0</version>
+		</dependency>
+		
+		<!--支持中文分词  -->
+		<dependency>
+    		<groupId>org.apache.lucene</groupId>
+    		<artifactId>lucene-analyzers-smartcn</artifactId>
+    		<version>7.1.0</version>
+    	</dependency>
+    	<dependency>
+    		<groupId>cn.bestwu</groupId>
+    		<artifactId>ik-analyzers</artifactId>
+    		<version>5.1.0</version>
+    	</dependency>
+    	
+    	<dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+        <!--引入Neo4j依赖  -->
+        <dependency>
+        	<groupId>org.springframework.boot</groupId>
+        	<artifactId>spring-boot-starter-data-neo4j</artifactId>
+        </dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+		
+	</build>
+<repositories>
+    
+</repositories>
+
+</project>
